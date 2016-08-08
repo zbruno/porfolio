@@ -1,0 +1,22 @@
+.contact-us {
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 95px;
+}
+
+.contact-us .input-box,textarea {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.send-button {
+  float: right;
+  transition: 350ms;
+
+  &.loading {
+    background: #ddd;
+    color: #444;
+    pointer-events: none;
+    transition: 350ms;
+  }
+}

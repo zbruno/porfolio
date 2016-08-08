@@ -1,0 +1,82 @@
+$white: #fff;
+
+.testimonial {
+  background: $white;
+  padding-bottom: 90px;
+}
+
+#client-feedbacks .feedback-box {
+  background: #555;
+  padding: 25px;
+  margin: 13px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: none;
+  display: block;
+  z-index: 5;
+  border: 2px solid #333;
+}
+
+.feedback-box .message {
+  font-size: 15px;
+  color: #D9D9D9;
+}
+
+.feedback-box .client {
+  margin-top: 30px;
+  height: 73px;
+  position: relative;
+}
+
+.feedback-box .quote {
+  float: left;
+  font-size: 45px;
+  line-height: 80px;
+}
+
+.feedback-box .client-info {
+  float: left;
+  margin-left: 18px;
+  padding-top: 15px;
+}
+
+.feedback-box .client-info .client-name {
+  font-family: 'Homemade Apple', serif;
+  color: #151515;
+}
+
+.feedback-box .client-info .client-company {
+  font-size: 13px;
+  margin-top: -3px;
+  color: #D9D9D9;
+}
+
+.feedback-box .client-image {
+  float: right;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f6f6f6;
+}
+
+.client-image img {
+  width: auto !important;
+  -webkit-transform-style: flat !important;
+}
+
+.customNavigation {
+  text-align: center;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #555;
+  border-radius: 50%;
+}
+
+.customNavigation a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

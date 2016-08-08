@@ -1,0 +1,36 @@
+.input-box {
+  border: 0;
+  width: 274px;
+  text-align: left;
+  text-transform: none;
+  padding: 9px;
+  min-height: 46px;
+  padding-left: 15px;
+  display: inline-block;
+  border-radius: 4px;
+  background: rgba(255,255,255, 0.95);
+}
+.textarea-box {
+  border: 0;
+  text-align: left;
+  text-transform: none;
+  padding: 9px;
+  min-height: 250px;
+  padding-left: 15px;
+  display: inline-block;
+  border-radius: 4px;
+  background: rgba(255,255,255, 0.95);
+}
+ textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus {
+    outline: 1 !important;
+    outline-color: #e96656 !important;
+    -webkit-appearance:none;
+        border:none !important;
+  -webkit-box-shadow:none !important;
+          box-shadow:none !important;
+        }

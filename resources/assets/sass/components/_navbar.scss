@@ -1,0 +1,103 @@
+.navbar {
+  background: #000000;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0 !important;
+  text-align: left;
+  -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
+          box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
+}
+#main-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  min-height: 75px;
+}
+
+#main-nav.fixed {
+  position: fixed !important;
+  top: 0;
+}
+
+.navbar-inverse .navbar-nav>li {
+  display: inline;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.navbar-inverse .navbar-nav>li:last-child {
+  margin-right: 0 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFF;
+  font-weight: bold;
+  padding: 0;
+  line-height: 35px;
+}
+
+.navbar-brand {
+  height: 76px;
+  position: relative;
+  line-height: 45px;
+}
+
+.current a {
+  color: #FFF !important;
+  position: relative;
+  outline: none;
+}
+
+.current:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #FFF;
+  bottom: 0px;
+  left: 12.5%;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #FFF;
+  outline: none;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #FFF;
+  bottom: 0px;
+  left: 12.5%;
+}
+
+.navbar-toggle {
+  border: 0;
+  margin-top: 23px;
+  border: black 1px solid;
+}
+
+.icon-bar {
+  color: #000;
+}
+
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+  border: white 1px solid;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal-dialog {
+  width: 70%;
+  margin: 15% auto;
+}
+
+.modal-content {
+  box-shadow: 0 0 10px 0 rgba(255,255,255, .5);
+}

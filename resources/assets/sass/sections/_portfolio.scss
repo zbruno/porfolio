@@ -1,0 +1,191 @@
+#works .section-header {
+  padding-bottom: 50px;
+}
+
+.works {
+  padding-bottom: 100px;
+  background: #FFFFFF;
+  min-height: 575px;
+}
+
+.worktitles {
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 50px 0;
+  font-weight: bold;
+  background-color: #990000;
+  padding: 5px 0;
+}
+
+h4.portfolio-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #404040;
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 2px solid #404040;
+}
+
+.cbp-rfgrid {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.cbp-rfgrid li {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 25%; /* Fallback */
+  width: -webkit-calc(100% / 4);
+  width: calc(100% / 4);
+  -webkit-transition: 0.4s all linear;
+          transition: 0.4s all linear;
+}
+
+.cbp-rfgrid li img {
+  display: block;
+  max-width: 100%;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+          transform: scale(1,1);
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  cursor: pointer;
+  -webkit-transition: 0.4s all linear;
+          transition: 0.4s all linear;
+}
+
+.cbp-rfgrid li:hover img {
+  -webkit-transform: scale(1.05,1.07);
+  -ms-transform: scale(1.05,1.07);
+          transform: scale(1.05,1.07);
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+.cbp-rfgrid li .project-info {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,0.5);
+  padding-top: 25%;
+  text-align: center;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all ease .25s;
+          transition: all ease .25s;
+}
+
+.cbp-rfgrid li .project-info .project-details {
+  position: relative;
+  top: -29px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all ease .25s;
+          transition: all ease .25s;
+  width: 100%;
+}
+
+.cbp-rfgrid li .project-info h5 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cbp-rfgrid li:hover .project-info {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.cbp-rfgrid li:hover .project-details {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  top: 0;
+}
+
+.cbp-rfgrid li:hover .button {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  bottom: -50px;
+}
+
+@media screen and (max-width: 1190px) {
+  .cbp-rfgrid li {
+  width: 25%; /* Fallback */
+width: -webkit-calc(100% / 4);
+  width: calc(100% / 4);
+}
+}
+@media screen and (max-width: 1024px) {
+  .cbp-rfgrid li {
+  width: 33.33333333333333%; /* Fallback */
+width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+}
+}
+@media screen and (max-width: 768px) {
+  .cbp-rfgrid li {
+  width: 50%; /* Fallback */
+width: -webkit-calc(100% / 2);
+  width: calc(100% / 2);
+}
+}
+@media screen and (max-width: 480px) {
+  .cbp-rfgrid li {
+  width: 100%;
+}
+}
+@media screen and (max-width: 300px) {
+  .cbp-rfgrid li {
+  width: 100%;
+}
+}
+
+/* PROJECT DETAILS LOADER */
+#back-button {
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 35px 13px 35px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+#back-button i {
+  margin-right: 10px;
+}
+
+#loader {
+  min-height: 930px;
+  position: relative;
+  display: none;
+}
+
+#loader .loader-icon {
+  background: url(../images/loading.gif) no-repeat center center;
+  background-color: #FFF;
+  margin: -22px -22px;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  -webkit-background-size: 30px 30px;
+          background-size: 30px 30px;
+  border-radius: 5px;
+}

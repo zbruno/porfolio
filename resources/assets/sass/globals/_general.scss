@@ -1,0 +1,79 @@
+html {  
+  font-size: 100%;        
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #808080;
+  font-weight: normal;
+  overflow-x: hidden;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+/* Other fixes*/
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+i {
+  vertical-align: middle;
+}
+ul, ol {
+padding-left: 0 !important; 
+}
+li {
+    list-style: none;
+}
+/* Selection colours (easy to forget) */
+::-moz-selection {
+  background: #000;
+  color: #FFF;
+}
+::selection {
+  background: #000;
+  color: #FFF;
+}
+::-moz-selection {
+  background: #000;
+  color: #FFF;
+}
+
+a {
+  color: #e96656;
+  -webkit-transition: all 700ms;
+          transition: all 700ms;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: #cb4332;
+}
+p {
+    margin: 0;
+}
+.full-width {
+  width: 100%;
+  margin: auto;
+}

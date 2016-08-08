@@ -1,2 +1,33 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'node_modules/owl.carousel/src/scss/owl.theme.default';
+@import 'node_modules/owl.carousel/src/scss/owl.carousel';
+@import 'node_modules/vegas/dist/vegas';
+@import 'node_modules/animate.css/animate';
 
+
+@import './globals/general';
+@import './globals/fonts';
+@import './globals/colors';
+@import './globals/responsive';
+
+@import './utilities/borders';
+
+@import './partials/form';
+@import './partials/section-header';
+
+@import './sections/about';
+@import './sections/contact';
+@import './sections/focus';
+@import './sections/footer';
+@import './sections/home';
+@import './sections/portfolio';
+@import './sections/seperators';
+@import './sections/testimonial';
+
+@import './components/alert';
+@import './components/buttons';
+@import './components/icons';
+@import './components/modal';
+@import './components/navbar';
+@import './components/preloader';
+@import './components/project';
