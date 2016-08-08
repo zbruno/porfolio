@@ -1,26 +1,71 @@
-@mixin generate-border-classes($color, $color-code) {
-  $left-amount: 12.5%;
-
-  @if $color == white or $color == dark {
-    $left-amount: 25%;
-  }
-
- .#{$color}-border-bottom:before {
-   background: #{$color-code};
-   bottom: -9px;
-   content: '';
-   height: 2px;
-   left: #{$left-amount};
-   margin: auto;
-   position: absolute;
-   width: 50%;
-   z-index: 1;
- }
+.white-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: #F5F5F5;
+  bottom: -9px;
+  left: 25%;
 }
 
-@include generate-border-classes(white, #F5F5F5);
-@include generate-border-classes(dark, #404040);
-@include generate-border-classes(red, #990000);
-@include generate-border-classes(green, #009900);
-@include generate-border-classes(blue, #000099);
-@include generate-border-classes(yellow, #999900);
+.dark-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: #404040;
+  bottom: -9px;
+  left: 25%;
+}
+
+.red-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #990000;
+  bottom: -9px;
+  left: 12.5%;
+}
+
+.green-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #009900;
+  bottom: -9px;
+  left: 12.5%;
+}
+
+.blue-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #000099;
+  bottom: -9px;
+  left: 12.5%;
+}
+
+.yellow-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #999900;
+  bottom: -9px;
+  left: 12.5%;
+}
