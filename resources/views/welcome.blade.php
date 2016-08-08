@@ -1,17 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
-
-                <div class="panel-body">
-                    Your Application's Landing Page.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    @include('partials._home')
+    @include('partials._focuses')
+    @include('partials._seperator_one')
+    @include('partials._works')
+    @include('partials._seperator_two')
+    @include('partials._about')
+    @include('partials._seperator_three')
+    @include('partials._testimonials')
+    @include('partials._contact')
 @endsection
